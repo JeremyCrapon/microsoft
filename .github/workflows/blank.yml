@@ -14,8 +14,8 @@ jobs:
         run: echo "Last update: $(date)" >> README.md
       - name: Commit changes
         run: |
-          git config --global user.name 'YourGitHubUsername'
-          git config --global user.email 'YourGitHubEmail@example.com'
+          git config --global user.name 'JeremyCrapon'
+          git config --global user.email 'jeremy.crapon@gmail.com'
           git add README.md
           git commit -m "Auto update README with date"
           git push
