@@ -11,7 +11,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
       - name: Update README
-        run: echo "Last update: $(date)" >> README.md
+        run: echo "Last update" >> README.md
       - name: Commit changes
         run: |
           git config --global user.name 'JeremyCrapon'
