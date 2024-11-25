@@ -14,7 +14,6 @@ jobs:
         run: echo "Updating" >> filetoupdate.sh
       - name: Commit changes
         run: |
-          git config --global user.name 'JeremyCrapon'
           git config --global user.email 'jeremy.crapon@gmail.com'
           git add filetoupdate.sh
           git commit -m "Auto update filetoupdate with date"
