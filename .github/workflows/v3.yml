@@ -14,7 +14,6 @@ jobs:
         run: echo "Last update v3" >> README.md
       - name: Commit changes
         run: |
-          git config --global user.name 'JeremyCrapon'
           git config --global user.email 'jeremy.crapon@gmail.com'
           git add README.md
           git commit -m "Auto update README with date"
