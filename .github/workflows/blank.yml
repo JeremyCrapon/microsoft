@@ -13,12 +13,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-      - name: Update README
+      - name: Update file
         run: echo "Updating" >> filetoupdate.sh
       - name: Commit changes
         run: |
           git config --global user.name 'JeremyCrapon'
           git config --global user.email 'jeremy.crapon@gmail.com'
-          git add README.md
-          git commit -m "Auto update README with date"
+          git add filetoupdate.sh
+          git commit -m "Auto update file"
           git push
